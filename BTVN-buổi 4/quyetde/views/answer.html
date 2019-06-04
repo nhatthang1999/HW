@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Đáp gọn</title>
+        <style>
+            .nav{
+                width: 100%;
+                height: 40px;
+                float: left;
+               
+            }
+
+            .content{
+                width:90%;
+                height: 300px;
+                float: left;
+                
+                margin-left: 30px;
+                margin-right: 30px;
+
+            }
+            button{
+                border:1px solid #2e6da4;
+                border-radius: 4px;
+                background-color: #337ab7;
+                color:white;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div class="nav">Đây là nav</div>
+        <div class="content">
+            <h1 id="text_question">Đây là câu hỏi</h1>
+            <form action="/answerquestion" method="post">
+                <div  id="btn_answer">
+                  <div >
+                    <button type="submit"  name="btn_yesno" value="no">
+                      <span ></span>
+                       Sai / Không / Trái
+                     </button>
+                  </div>
+                  <div >
+                    <button type="submit"  name="btn_yesno" value="yes">
+                      <span ></span>
+                       Đúng / Có / Phải
+                     </button>
+                  </div>
+                </div>
+                <div  >
+                  <button type="submit"  name="btn_yesno" value="ketquavote">Kết quả vote</button>
+                  <button type="submit"  name="btn_yesno" value="cauhoikhac">Câu hỏi khác</button>
+                </div>
+              </form>
+        </form>
+        </div>
+    </body>
+    <script src="/public/answer.js"></script>
+</html>
